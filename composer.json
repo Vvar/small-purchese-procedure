@@ -6,12 +6,12 @@
     "require": {
         "php": ">=5.5",
         "zendframework/zendframework": ">=2.4",
-        "small-purchase-procedure": "*"
+        "mte/small-purchase-procedure": "*"
 
     },
     "autoload": {
         "psr-4": {
-            "SmallPurcheseProcedure": "src/"
+            "Mte\\SmallPurcheseProcedure\\": "src/"
         },
         "classmap": [
             "./Module.php"
