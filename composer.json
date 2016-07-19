@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "mte\\SmallPurcheseProcedure\\": "src/"
+            "Mte\\SmallPurcheseProcedure\\": "src/"
         },
         "classmap": [
             "./Module.php"
