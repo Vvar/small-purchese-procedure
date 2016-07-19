@@ -1,5 +1,6 @@
 {
     "name": "mte/small-purchese-procedure",
+    "minimum-stability": "dev",
     "description": "Закупки малого объема",
     "type": "library",
     "homepage": "http://github.com/Vvar/small-purchese-procedure.git",
@@ -14,6 +15,5 @@
         "classmap": [
             "./Module.php"
         ]
-    },
-    "minimum-stability": "dev"
+    }
 }
