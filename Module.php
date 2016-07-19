@@ -8,7 +8,8 @@ use Zend\ModuleManager\Feature\ConsoleUsageProviderInterface;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 use Doctrine\DBAL\Types\Type;
-use Application\Mvc\Handler\Exception;
+
+use Vvar\SmallPurchaseProcedure\Mvc\Handler\Exception;
 
 /**
  * Class Module

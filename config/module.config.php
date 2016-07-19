@@ -1,4 +1,10 @@
 <?php
+use Vvar\SmallPurchaseProcedure\Listener\GridBackUrlEvent;
+use Vvar\SmallPurchaseProcedure\Service\Logger;
+use Vvar\SmallPurchaseProcedure\Mvc\Router\Router\Router;
+use Vvar\SmallPurchaseProcedure\Controller\TestEventBusController;
+use Vvar\SmallPurchaseProcedure\View\Helper\UserToolbar;
+use Vvar\SmallPurchaseProcedure\View\Helper\ActiveUser;
 
 return [
     'doctrine' => [
@@ -15,14 +21,14 @@ return [
         ],
     ],
     'router' => [
-        'router_class' => 'Application\Mvc\Router\Router\Router',
+        'router_class' => Router::class,
         'routes' => [
             'testEventBus' => [
                 'type' => 'Literal',
                 'options' => [
                     'route' => '/testEventBus',
                     'defaults'=> [
-                        'controller' => 'Application\Controller\TestEventBusController',
+                        'controller' => TestEventBusController::class,
                         'action' => 'index'
                     ],
                 ],
@@ -38,10 +44,9 @@ return [
             'translator' => 'Zend\Mvc\Service\TranslatorServiceFactory',
         ),
         'invokables' => [
-            'GridBackUrlEventListener' => \Application\Listener\GridBackUrlEvent::class,
-
+            'GridBackUrlEventListener' => GridBackUrlEvent::class,
             // Service
-            'mteLogService' => 'Application\Service\Logger',
+            'mteLogService' => Logger::class,
         ]
     ),
     'translator' => array(
@@ -90,8 +95,8 @@ return [
     ),
     'view_helpers' => array(
         'invokables' => array(
-            'userToolbar' => 'Application\View\Helper\UserToolbar',
-            'activeUser' => 'Application\View\Helper\ActiveUser',
+            'userToolbar' => UserToolbar::class,
+            'activeUser' => ActiveUser::class,
         )
     ),
 ];

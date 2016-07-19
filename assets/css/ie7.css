@@ -1,0 +1,30 @@
+/* 
+    Document   : ie7
+    Author     : Pantushin Sergey
+    Description: IE7 FIX
+*/
+
+.window fieldset legend {
+    margin-left: -3%;
+    width: 101%;
+}
+nav ul ul li {
+    width:  250px;
+}
+.explain-links {
+    clear: both;
+}
+.explain-links li, .explain-links li:hover {
+    padding: .5em 1em;
+    display: block;
+    float: left;
+    margin-right: 2px;
+    overflow: hidden;
+}
+.mte-grid-element {
+    clear: both;
+}
+.window div.info {
+    white-space: pre;
+    word-wrap: break-word;
+}

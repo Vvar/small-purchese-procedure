@@ -1,0 +1,19 @@
+<?php
+/**
+ * @company MTE Telecom, Ltd.
+ * @author Roman Malashin <malashinr@mte-telecom.ru>
+ */
+$this->headTitle($this->form->getLabel());
+?>
+    <h3><?php echo $this->escapeHtml($this->form->getLabel()); ?></h3>
+<?php
+if($this->error) {
+    echo $this->error;
+} else if($_POST) {
+    echo 'Пакет отправлен успешно';
+}
+$form->prepare();
+echo $this->form()->openTag($form);
+echo $this->formTextarea($form->get('data')) . '<br/>';
+echo $this->formRow($form->get('send'));
+echo $this->form()->closeTag();

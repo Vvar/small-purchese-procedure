@@ -1,0 +1,16 @@
+<?php
+$user = $this
+    ->getHelperPluginManager()
+    ->getServiceLocator()
+    ->get('mteActiveUser');
+
+$contents = [
+    'headTitle' => $this->headTitle(LOGOTYPE)->setSeparator(' | '),
+    '%content%' => $this->content,
+    '<!--%HeadLink%-->' => $this->plugin('HeadLink'),
+    '<!--%HeadStyle%-->' => $this->plugin('HeadStyle'),
+    '<!--%HeadScript%-->' => $this->plugin('HeadScript'),
+    '<!--%inlineScript%-->' => $this->inlineScript(),
+];
+
+echo $this->createLayout($user, $contents);

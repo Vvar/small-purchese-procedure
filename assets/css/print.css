@@ -1,0 +1,13 @@
+nav, footer, .header-blocks, .center, .not-print {
+    display: none;
+}
+a, a:hover, a:active, a:visited {
+    text-decoration: none;
+    color: black;
+}
+.window label span {
+    font-weight: bold;
+}
+.mte-grid-standard th {
+    display: none;
+}

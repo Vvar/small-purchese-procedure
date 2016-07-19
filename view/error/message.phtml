@@ -1,0 +1,15 @@
+<?php
+if($this->headTitle){
+    $this->headTitle($this->headTitle);
+}?>
+<h1><?php echo $this->title; ?></h1>
+<br/>
+<p><?php echo $this->message; ?></p>
+<br/>
+<?php
+echo $this->mteFormBackButton(
+    new \Zend\Form\Element\Button('back', array(
+        'label' => 'Вернуться'
+    ))
+);
+?>
