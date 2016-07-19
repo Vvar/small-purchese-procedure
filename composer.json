@@ -1,5 +1,5 @@
 {
-    "name": "mte/small-purchese-procedure",
+    "name": "Vvar/small-purchese-procedure",
     "description": "Закупки малого объема",
     "type": "library",
     "homepage": "http://github.com/Vvar/small-purchese-procedure.git",
@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Mte\\SmallPurcheseProcedure\\": "src/"
+            "Vvar\\SmallPurcheseProcedure\\": "src/"
         },
         "classmap": [
             "./Module.php"
