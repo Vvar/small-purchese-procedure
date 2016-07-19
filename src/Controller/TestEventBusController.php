@@ -4,7 +4,7 @@
  * @author Gushchina Elena <gushchina@mte-telecom.ru>
  */
 
-namespace SmallPurchaseProcedure\Controller;
+namespace Vvar\SmallPurchaseProcedure\Controller;
 
 use MteBus\EventBus\EventBusManager\EventBusManagerFacade;
 use MteBus\EventBus\Exception\RuntimeException;

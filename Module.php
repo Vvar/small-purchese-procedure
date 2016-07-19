@@ -1,6 +1,6 @@
 <?php
 
-namespace Mte\SmallPurchaseProcedure;
+namespace Vvar\SmallPurchaseProcedure;
 
 use MteBase\Module\AbstractModule;
 use Zend\Console\Adapter\AdapterInterface;
